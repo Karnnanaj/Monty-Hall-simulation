@@ -61,7 +61,7 @@ body, html {
   display : flex;
   align-items : center;
   justify-content  : center;
-  background : rgb(255, 244, 208);
+  background : #fbfffa;
 }
 
 .animation-container {
@@ -227,7 +227,7 @@ body, html {
   display : flex;
   /* align-items : center; */
   justify-content  : center;
-  background : rgb(255, 244, 208);
+  background : #fbfffa;
 }
 
 .animation-container {
