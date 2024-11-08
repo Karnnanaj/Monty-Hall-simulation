@@ -219,7 +219,7 @@ body, html {
   grid-auto-rows: min-content;
   max-width: 80%; /* Adjust width as needed */
   gap: 40px;
-  margin: 50px auto;
+  margin: 150px auto;
 }
 body, html {
   width : 100%;
@@ -335,7 +335,7 @@ body, html {
  #slider {
    -webkit-appearance: none;
    appearance: none;
-   height: 30px !important;
+   height: 50px !important;
    width: 70%;
    border-radius: 10em;
    background-color: #fffce2;
@@ -346,8 +346,8 @@ body, html {
  #slider::-webkit-slider-thumb {
    -webkit-appearance: none;
    appearance: none;
-   width: 40px;
-   height: 40px;
+   width: 60px;
+   height: 60px;
    border-radius: 60%;
    background: #e3e3e3;
    cursor: pointer;
@@ -368,8 +368,8 @@ body, html {
   color: #323232;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1.5px;
-  font-size: 20px;
-  margin-left: 5px;
+  font-size: 45px;
+  margin-left: 15px;
  }
  
  
