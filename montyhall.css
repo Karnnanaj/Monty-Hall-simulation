@@ -25,7 +25,7 @@
 
   /* Outline */
   border: 3px solid #3b1a00;
-  
+  /* opacity: .5; */
   transform-origin: left;
   transition: all 0.5s ease-in-out;
 }

@@ -50,7 +50,11 @@ function initializeDoors() {
     const numberOfDoors = doorCountSlider.value;
     doorCountDisplay.textContent = numberOfDoors;
     coinDoor = Math.floor(Math.random() * numberOfDoors);
-
+    rd = Math.floor(Math.random() * numberOfDoors);
+    
+    while (rd === coinDoor) {
+      rd = Math.floor(Math.random() * numberOfDoors);
+    } 
     // Generate each door
     for (let i = 0; i < numberOfDoors; i++) {
         const backDoor = document.createElement("div");
@@ -83,18 +87,26 @@ function handleDoorSelection(index) {
 
         // Open all non-coin, non-selected doors
         doors.forEach((door, i) => {
-            if(i == selectedDoor && i == coinDoor){
-                
-            }
-            else if (i !== selectedDoor && i !== coinDoor) {
-                door.querySelector(".door").classList.add("doorOpen");
-            }
-        });
+          if (selectedDoor === coinDoor) {
+              // Generate a random door index that is not selectedDoor or coinDoor
+              // let id;
+              // do {
+                  // id = Math.floor(Math.random() * numberOfDoors);
+              // } while (id === selectedDoor);
+      
+              if (i !== rd && i !== coinDoor) {
+                  door.querySelector(".door").classList.add("doorOpen");
+              }
+          } else if (i !== selectedDoor && i !== coinDoor) {
+              door.querySelector(".door").classList.add("doorOpen");
+          }
+      });
     } 
     else {
         // If one of the remaining two doors is clicked again, open both remaining doors
         doors[selectedDoor].querySelector(".door").classList.add("doorOpen");
         doors[coinDoor].querySelector(".door").classList.add("doorOpen");
+        doors[rd].querySelector(".door").classList.add("doorOpen");
     }
 }
 
