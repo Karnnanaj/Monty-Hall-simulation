@@ -116,4 +116,21 @@ doorCountSlider.addEventListener("input", initializeDoors);
 // Initialize on page load
 initializeDoors();
 
+document.querySelector('.refresh').addEventListener('click', function() {
+  // Toggle loading class
+  // this.classList.add('loading');
+  
+  // Close all doors
+  doors.forEach((door) => {
+      door.querySelector(".door").classList.remove("doorOpen");
+  });
+  
+  // Reset selected door and rerandomize coin door
+  selectedDoor = null;
+  coinDoor = Math.floor(Math.random() * doorCountSlider.value);
+  
+  // Reinitialize doors with new settings
+  initializeDoors();
 
+  // Remove the loading class after 2 seconds
+});
