@@ -4,6 +4,9 @@ const doorCountDisplay = document.getElementById("output");
 // slider
 const doorCountSlider = document.getElementById("slider");
 // const output = document.getElementById("output");
+const slider = document.getElementById("slider");
+
+
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
@@ -134,3 +137,15 @@ document.querySelector('.refresh').addEventListener('click', function() {
 
   // Remove the loading class after 2 seconds
 });
+
+function updateSliderMax() {
+    if (window.innerWidth > 1000) {
+        slider.max = 21;
+    } else {
+        slider.max = 20;
+    }
+}
+
+// Initial check and on window resize
+updateSliderMax();
+window.addEventListener("resize", updateSliderMax);
