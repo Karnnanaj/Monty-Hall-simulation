@@ -25,7 +25,7 @@
 
   /* Outline */
   border: 3px solid #3b1a00;
-  opacity: .5;
+  /* opacity: .5; */
   transform-origin: left;
   transition: all 0.5s ease-in-out;
 }
@@ -690,7 +690,7 @@ body {
 	height: 40px;
 	margin: 0 auto;
 	display: block;
-  transform: scale(1.3);
+  transform: scale(2);
 	.icon {
 		fill: #fbffe2;
 	}
@@ -721,6 +721,6 @@ body {
   align-items: center ;
   display: block;
   padding-left: 94px;
-  padding-top: 6px;
+  padding-top: 13px;
   /* padding-bottom: 20px; */
 }
