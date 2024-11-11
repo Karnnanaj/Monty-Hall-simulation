@@ -1,16 +1,29 @@
 
-.backDoor {
-  background-color: #e4fccd;
-  position: relative;
-  width: 108px;
-  height: 158px;
-  border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 30px;
-
-  /* Use inset box-shadow for an inner outline */
-  box-shadow: inset 0 0 0 2px rgb(50, 31, 5);
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 
 .door {
   background-color: rgb(151, 187, 132);
@@ -45,23 +58,40 @@
     margin-top: 50px;
 } */
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   /* Styles for small screens */
   .door-container {
+  /* max-height: 120vh;
+  overflow-y: auto;  */
+  /* padding-top: 230px; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsive columns */
   grid-auto-rows: min-content;
-  max-width: 80%; /* Adjust width as needed */
+  max-width: 80%;
   gap: 40px;
   margin: 50px auto;
 }
 body, html {
+  flex-direction: column;
   width : 100%;
   height: 100%;
   display : flex;
   align-items : center;
   justify-content  : center;
   background : #ffffff;
+}
+
+.backDoor {
+  background-color: #e4fccd;
+  position: relative;
+  width: 108px;
+  height: 158px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  /* Use inset box-shadow for an inner outline */
+  box-shadow: inset 0 0 0 2px rgb(50, 31, 5);
 }
 
 .animation-container {
@@ -149,6 +179,7 @@ body, html {
 }
 .top-bar {
   position: fixed;
+  align-self: center;
   top: 10px;
   left: 0;
   width: 100%;
@@ -159,10 +190,12 @@ body, html {
   display: flex;
   /* border: 3px solid#222222; */
   justify-content: center;
+  margin: auto;
 }
 
 .sliderContainer {
-  width: 200px;
+  display: block;
+  width: 70%;
   text-align: center;
  }
  
@@ -200,7 +233,7 @@ body, html {
  
  #output {
   color: #323232;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Courier Prime", monospace;
   letter-spacing: 1.5px;
   font-size: 24px;
   margin-top: 5px;
@@ -262,18 +295,20 @@ body, html {
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   /* Styles for small screens */
   .door-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); /* Responsive columns */
   grid-auto-rows: min-content;
-  max-width: 80%; /* Adjust width as needed */
-  gap: 61px;
-  margin: 150px auto;
+  max-width: 100%; /* Adjust width as needed */
+  gap: 46px;
+  padding-top: 115px;
+  margin: 0px auto;
 }
 
 body, html {
+  flex-direction: column;
   width : 100%;
   height: 100%;
   display : flex;
@@ -282,13 +317,26 @@ body, html {
   background : #ffffff;
 }
 
+.backDoor {
+  background-color: #e4fccd;
+  position: relative;
+  width: 85px;
+  height: 124px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  /* Use inset box-shadow for an inner outline */
+  box-shadow: inset 0 0 0 2px rgb(50, 31, 5);
+}
+
 .animation-container {
   position: absolute; /* Positions relative to .backDoor */
-  top: -70px; /* Adjust based on desired vertical alignment */
-  left: -43px; /* Adjust for horizontal alignment to the left */
+  top: -90px; /* Adjust based on desired vertical alignment */
+  left: -54px; /* Adjust for horizontal alignment to the left */
   width : 200px;
   height : 300px;
-  transform: scale(0.5);
+  transform: scale(0.4);
   transform-origin: center;
 }
 
@@ -380,15 +428,18 @@ body, html {
 }
 
 .sliderContainer {
-  width: 200px;
-  text-align: center;
+  display: flex;
+  position: relative;
+  width: 80%;
+  padding-left: 10px;
+  align-items: center;
  }
  
  #slider {
    -webkit-appearance: none;
    appearance: none;
    height: 50px !important;
-   width: 70%;
+   width: 85%;
    border-radius: 10em;
    background-color: #fffce2;
    border: 2px solid black ;
@@ -418,10 +469,11 @@ body, html {
  
  #output {
   color: #323232;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Courier Prime", monospace;
   letter-spacing: 1.5px;
   font-size: 45px;
   margin-left: 15px;
+  padding-top: 5px;
  }
 
  body {
@@ -471,7 +523,8 @@ body, html {
 .refreshbox{
   align-items: center ;
   display: block;
-  padding-left: 83px;
+  padding-left: 60px;
+  padding-right: 35px;
   padding-top: 8px;
   /* padding-bottom: 20px; */
 }
@@ -780,3 +833,41 @@ body, html {
   }
 }
 
+.textcontainer {
+  padding-bottom: 50px;
+  align-self: center;
+  max-width: 1200px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-family: "Courier Prime", monospace;
+  text-align: center;
+  font-size: 1.1em;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expand-button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #96d286;
+  color: #3d3d3d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Courier Prime", monospace;
+}
+
+.text-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.textcontainer.expanded .text-content {
+  max-height: 300px; /* Set this value according to the content size */
+}
