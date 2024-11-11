@@ -282,12 +282,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // Update the slider output
     doorCountDisplay.innerHTML = value;
 
-    // Update all elements with the class 'doornumber'
-    const doorNumberSpans = document.querySelectorAll(".doornumber");
-    doorNumberSpans.forEach((span, index) => {
-        span.innerHTML = index === 0 ? value : valueMinusOne;
+    // Update spans in the paragraph dynamically
+    const doorNumberElements = document.querySelectorAll(".door-number");
+    const doorNumberMinusOneElements = document.querySelectorAll(".door-number-minus-one");
+
+    doorNumberElements.forEach((span) => {
+        span.innerHTML = value;
     });
-  }
+
+    doorNumberMinusOneElements.forEach((span) => {
+        span.innerHTML = valueMinusOne;
+    });
+}
 
   initializeDoors();
   updateDoorCount();

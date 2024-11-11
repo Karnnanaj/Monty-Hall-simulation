@@ -11,9 +11,13 @@
 </head>
 <body>
     <div class="top-bar">
+        <li class="headingt">
+            Montyhall Problem<br>Simulation
+        </li>
         <li class="sliderContainer">
             <input type="range" value="3" min="3" max="slidermax" id="slider">
             <span id="output"></span> 
+            <!-- <img src="scale.svg" alt="" class="c-bar_line-img"> -->
         </li>
         <li class="refreshbox">
         <div class="refresh">
@@ -35,9 +39,12 @@
             <div class="text-content">
             
                 <!-- The content you want to reveal goes here -->
-                <p>    Switching the door yeilds higher probability of finding the coin!<br>
-                    How? It is because while the chance of find the coin in the first selected door was 1/<span id="doornumber"></span>, but chance of finding it in any of the other <span id="doornumber"></span> doors was <span id="doornumber"></span>/<span id="doornumber"></span>, now all the wrong doors except one from those 19 doors were eliminated, leaving the remaining door with a probability of 19/20 of finding the coin.
-                </p>
+                <p>
+                    Switching the door increases your chances of finding the coin!<br><br>
+                    Why? Initially, the chance of finding the coin behind your first chosen door was only 1/<span class="door-number"></span>. In contrast, the chance that the coin was behind any one of the other <span class="door-number-minus-one"></span> doors was <span class="door-number-minus-one"></span>/<span class="door-number"></span>. After eliminating all but one of these other doors, the probability of the coin being behind the remaining unchosen door is now higher than your original door, making it the statistically better choice to switch!
+                    <br><br>Therefore, after switching, the probability of finding the coin is <span class="door-number-minus-one"></span>/<span class="door-number"></span>.
+                </p>                
+                
             </div>
         </div>
     </div>
