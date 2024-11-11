@@ -63,7 +63,7 @@
   .door-container {
   /* max-height: 120vh;
   overflow-y: auto;  */
-  /* padding-top: 230px; */
+  padding-top: 15%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsive columns */
   grid-auto-rows: min-content;
@@ -299,11 +299,11 @@ body, html {
   /* Styles for small screens */
   .door-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(auto-fill, minmax(36px, 1fr)); /* Responsive columns */
   grid-auto-rows: min-content;
   max-width: 100%; /* Adjust width as needed */
   gap: 46px;
-  padding-top: 115px;
+  padding-top: 140px;
   margin: 0px auto;
 }
 
@@ -320,8 +320,8 @@ body, html {
 .backDoor {
   background-color: #e4fccd;
   position: relative;
-  width: 85px;
-  height: 124px;
+  width: 60px;
+  height: 88px;
   border-radius: 5px;
   margin: 0 auto;
   margin-top: 30px;
@@ -332,11 +332,11 @@ body, html {
 
 .animation-container {
   position: absolute; /* Positions relative to .backDoor */
-  top: -90px; /* Adjust based on desired vertical alignment */
-  left: -54px; /* Adjust for horizontal alignment to the left */
+  top: -109px; /* Adjust based on desired vertical alignment */
+  left: -68px; /* Adjust for horizontal alignment to the left */
   width : 200px;
   height : 300px;
-  transform: scale(0.4);
+  transform: scale(0.3);
   transform-origin: center;
 }
 
@@ -419,7 +419,7 @@ body, html {
   left: 0;
   width: 100%;
   background-color: #c0cfa7; /* Light background color */
-  padding: 20px 0;
+  padding: 5px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
   z-index: 1000; /* Ensures it stays above other content */
   display: flex;
@@ -431,14 +431,14 @@ body, html {
   display: flex;
   position: relative;
   width: 80%;
-  padding-left: 10px;
+  padding-left: 35px;
   align-items: center;
  }
  
  #slider {
    -webkit-appearance: none;
    appearance: none;
-   height: 50px !important;
+   height: 30px !important;
    width: 85%;
    border-radius: 10em;
    background-color: #fffce2;
@@ -449,8 +449,8 @@ body, html {
  #slider::-webkit-slider-thumb {
    -webkit-appearance: none;
    appearance: none;
-   width: 60px;
-   height: 60px;
+   width: 36px;
+   height: 36px;
    border-radius: 60%;
    background: #e3e3e3;
    cursor: pointer;
@@ -490,7 +490,7 @@ body, html {
 	height: 40px;
 	margin: 0 auto;
 	display: block;
-  transform: scale(2);
+  transform: scale(1.2);
 	.icon {
 		fill: #fbffe2;
 	}
