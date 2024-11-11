@@ -205,7 +205,7 @@ body, html {
 .top-bar {
   position: fixed;
   top: 20px;
-  /* left: 0; */
+  left: 4%;
   width: 90%;
   background-color: #ffe3e2; /* Light background color */
   padding: 5px 0;
@@ -497,7 +497,7 @@ body, html {
 .top-bar {
   position: fixed;
   top: 20px;
-  /* left: 0; */
+  left: 4%;
   width: 90%;
   background-color: #ffe3e2; /* Light background color */
   padding: 5px 0;
@@ -537,8 +537,9 @@ body, html {
  #slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 36px;
-  height: 56px;
+  box-shadow: 3px 3px 0px rgba(28, 28, 28, 0.9);
+  width: 33px;
+  height: 46px;
   border-radius: 20%;
   background: #f7594a;
   cursor: pointer;
