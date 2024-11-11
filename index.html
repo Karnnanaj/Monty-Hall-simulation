@@ -27,19 +27,20 @@
         <span id="doorCountDisplay">3</span>
     </div>
      -->
-    
-    <div class="door-container" id="doorContainer"></div>
+    <div class="maincontent">
+        <div class="door-container" id="doorContainer"></div>
 
-   <div class="textcontainer">
-  <button class="expand-button" onclick="toggleText()">Explanation</button>
-  <div class="text-content">
-    
-    <!-- The content you want to reveal goes here -->
-    <p>    Switching the door yeilds higher probability of finding the coin!<br>
-        How? It is because while the chance of find the coin in the first selected door was 1/<span id="doornumber"></span>, but chance of finding it in any of the other <span id="doornumber"></span> doors was <span id="doornumber"></span>/<span id="doornumber"></span>, now all the wrong doors except one from those 19 doors were eliminated, leaving the remaining door with a probability of 19/20 of finding the coin.
-    </p>
-  </div>
-</div>
+        <div class="textcontainer">
+            <button class="expand-button" onclick="toggleText()">Explanation</button>
+            <div class="text-content">
+            
+                <!-- The content you want to reveal goes here -->
+                <p>    Switching the door yeilds higher probability of finding the coin!<br>
+                    How? It is because while the chance of find the coin in the first selected door was 1/<span id="doornumber"></span>, but chance of finding it in any of the other <span id="doornumber"></span> doors was <span id="doornumber"></span>/<span id="doornumber"></span>, now all the wrong doors except one from those 19 doors were eliminated, leaving the remaining door with a probability of 19/20 of finding the coin.
+                </p>
+            </div>
+        </div>
+    </div>
    
     <script src="montyhall.js"></script>
 </body>

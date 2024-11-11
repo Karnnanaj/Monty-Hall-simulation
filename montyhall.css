@@ -61,16 +61,26 @@
 @media (min-width: 600px) {
   /* Styles for small screens */
   .door-container {
-  /* max-height: 120vh;
-  overflow-y: auto;  */
-  padding-top: 15%;
+  position: relative;
+  /* max-height: calc(100vh - 100px); */
+  /* overflow-y: auto;  */
+  /* padding-top: 300px; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsive columns */
   grid-auto-rows: min-content;
-  max-width: 80%;
+  max-width: 85%;
   gap: 40px;
   margin: 50px auto;
 }
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-y: auto;
+}
+
 body, html {
   flex-direction: column;
   width : 100%;
@@ -298,13 +308,23 @@ body, html {
 @media (max-width: 600px) {
   /* Styles for small screens */
   .door-container {
+  /* overflow-y: auto; */
   display: grid;
+  max-width: calc(100vw - 150px);
   grid-template-columns: repeat(auto-fill, minmax(36px, 1fr)); /* Responsive columns */
   grid-auto-rows: min-content;
-  max-width: 100%; /* Adjust width as needed */
+  /* max-width: 100%; Adjust width as needed */
   gap: 46px;
-  padding-top: 140px;
+  padding-top: 60px;
   margin: 0px auto;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-y: auto;
 }
 
 body, html {
@@ -871,3 +891,4 @@ body, html {
 .textcontainer.expanded .text-content {
   max-height: 300px; /* Set this value according to the content size */
 }
+
