@@ -293,7 +293,7 @@ body, html {
  body {
   background-image: url("background.svg");
   background-position: 50%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 	padding: 50px;
 	/* background: #ffffff; */
 }
@@ -582,7 +582,7 @@ body, html {
   background-image: url("background.svg");
 	/* padding: 50px; */
   background-position: 50%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 	/* background: #ffffff; */
 }
 .refresh {
