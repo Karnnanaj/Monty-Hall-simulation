@@ -969,12 +969,12 @@ body, html {
 
 .text-content {
   max-height: 0;
-  overflow: hidden;
+  overflow: scroll;
   transition: max-height 0.3s ease-out;
 }
 
 .textcontainer.expanded .text-content {
-  max-height: 300px; /* Set this value according to the content size */
+  max-height: 500px; /* Set this value according to the content size */
 }
 
 .c-bar_line-img {
