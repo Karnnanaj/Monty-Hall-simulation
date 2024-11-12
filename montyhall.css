@@ -969,7 +969,7 @@ body, html {
 
 .text-content {
   max-height: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   transition: max-height 0.3s ease-out;
 }
 

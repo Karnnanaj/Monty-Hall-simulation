@@ -152,7 +152,6 @@
 // // Initial check and on window resize
 // updateSliderMax();
 // window.addEventListener("resize", updateSliderMax);
-
 function toggleText() {
   const container = document.querySelector('.textcontainer');
   container.classList.toggle('expanded');
